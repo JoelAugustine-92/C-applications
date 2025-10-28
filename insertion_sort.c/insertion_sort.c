@@ -8,7 +8,7 @@ int main()
   printf("enter the array elements: \n");
   for(i=0;i<n;i++)
     scanf("%d",&a[i]);
-  for(i=0;i<n;i++)
+  for(i=1;i<n;i++)
     {
       key=a[i];
       j=i-1;
@@ -19,6 +19,11 @@ int main()
         }
         a[j+1]=key;
     }
+  printf("The sorted array is : \n");
+  for(i=0;i<n;i++)
+    printf("%d\t",a[i]);
+  return 0;
+  }
   printf("The sorted array is : \n");
   for(i=0;i<n;i++)
     printf("%d",a[i]);
